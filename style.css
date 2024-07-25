@@ -33,10 +33,7 @@
     font-family: "Arsenal SC", sans-serif;
 }
 .menu a:hover{
-    color: white;
-    border: 1px solid darkslategray;
-    background: darkslategray;
-    padding: 5px;
+    color: brown;
 }
 
 /* ------------SLICE-------------*/
@@ -72,7 +69,7 @@
     border-radius: 30px;
     font-size: 20px;
     font-family: "Arsenal SC", sans-serif;
-    margin: 20px 100px;
+    margin: 20px 20px;
     border: none;
     cursor: pointer;
 }
@@ -106,18 +103,20 @@
     width: 600px;
     height: 600px;
     float: left;
-    background-image: url(https://i.pinimg.com/736x/36/0a/a3/360aa3e8bd362fc2689a79bce1beb5cb.jpg);
+    background-image: url(https://i.pinimg.com/736x/76/57/0b/76570bdcac0133bf7c032ba76502f409.jpg);
     background-size: cover;
     position: relative;
     margin-bottom: 100px;
+    clip-path:inset(10px round 10px 100px);
 }
 #bannerRight{
     width: 560px;
     height: 700px;
     float: right;
-    background-image: url(https://i.pinimg.com/736x/f6/e8/24/f6e8245c546f4740bee0b1d99b8654f8.jpg);
+    background-image: url(https://i.pinimg.com/564x/cf/2d/4e/cf2d4e38401eb672e247eb925b70750a.jpg);
     background-size: cover;
     position: relative;
+    clip-path:inset(10px round 100px 10px);
 }
 .banner a p{
     font-size: 30px;
@@ -129,42 +128,110 @@
 
 .banner .text1{
     position: absolute;
-    font-size: 60px;
+    font-size: 50px;
     left: 40px;
     top: 30px;
 }
 .banner .view1{
+    font-size: 25px;
     position: absolute;
     left: 300px;
-    top: 100px;
+    top: 70px;
     cursor: pointer;
 }
 
 .banner .text2{
+    font-size: 50px;
     position: absolute;
     font-size: 60px;
     right: 40px;
-    top: 100px;
+    top: 40px;
 }
 .banner .view2{
+    font-size: 25px;
     position: absolute;
     right: 50px;
-    top: 30px;
+    top: 110px;
     cursor: pointer;
 }
 /* ------------CONTENT-------------*/
 .content{
-    float: left;
     margin-top: 20px;
 }
 .content #title{
-    font-size: 40px;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
 }
-.content .layer1 a{
-    text-align: center;
+.sp #first:first-child, .layer2 .first, .layer3 .first, .layer4 .first{
+    margin-left: 0;
+}
+.sp{
+    text-decoration: none;
 }
 .sp img{
-    width: 290px;
-    height: 400px;
+    width: 280px;
+    height: 350px;
+    margin-left: 20px;
+    float: left;
+    overflow: hidden;
+    clip-path: inset(10px round 10px);
+    -webkit-transform: scale(1.0);
+       -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+         -o-transform: scale(1.0);
+            transform: scale(1.0);
+}
+.sp img:hover{
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.ten{
+    width: 280px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: darkslategray;
+    text-transform: uppercase;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.ten p:last-child{
+    color: cadetblue;
+    font-size: 20px;
+    margin-top: 2px;
+    text-transform: capitalize;
+    text-decoration: line-through;
+}
+.gia{
+    width: 280px;
+    font-size: 25px;
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    margin-top: 2px;
+    color: brown;
+    font-weight: bold;
+    overflow: hidden;
+}
+.gia span{
+    font-size: 15px;
+    color: darkslategray;
+}
+.mua button{
+    padding: 0px 0px;
+    text-align: center;
+    border-radius: 0%;
+    width: 260px;
+    font-size: 20px;
+    float: left;
+    margin-top: 2px;
+}
+.layer4{
+    text-align: center;
 }
